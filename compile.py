@@ -19,8 +19,9 @@ for filename in sys.argv[2:]:
 	telescope = s.header['TELESCOP']
 	#if y[:500].mean() > 5:
 	if True or y[:200].mean() > 5:
-		print filename
+		print(filename)
 		data.append(y)
+	f.close()
 
 data = numpy.array(data)
 
