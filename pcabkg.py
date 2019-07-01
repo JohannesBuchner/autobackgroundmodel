@@ -360,14 +360,14 @@ class PCAFitter(object):
 	
 if __name__ == '__main__':
 	import sys
-        import logging
-        #logging.basicConfig(filename='bxa.log',level=logging.DEBUG)
-        #logFormatter = logging.Formatter("[%(name)s %(levelname)s]: %(message)s")
-        logFormatter = logging.Formatter("%(levelname)s: %(message)s")
-        consoleHandler = logging.StreamHandler()
-        consoleHandler.setFormatter(logFormatter)
-        consoleHandler.setLevel(logging.INFO)
-        logging.getLogger().addHandler(consoleHandler)
+	import logging
+	#logging.basicConfig(filename='bxa.log',level=logging.DEBUG)
+	#logFormatter = logging.Formatter("[%(name)s %(levelname)s]: %(message)s")
+	logFormatter = logging.Formatter("%(levelname)s: %(message)s")
+	consoleHandler = logging.StreamHandler()
+	consoleHandler.setFormatter(logFormatter)
+	consoleHandler.setLevel(logging.INFO)
+	logging.getLogger().addHandler(consoleHandler)
 
 	if len(sys.argv) != 3:
 		print('SYNOPSIS: %s <bkg.pi> <src.pi> ' % sys.argv[0])
